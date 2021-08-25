@@ -1,1 +1,2 @@
-# JavaScript_Interviwe_prep
+# JavaScript Daily Problemes
+## In this Repo Every day m Practicing JS Problems
