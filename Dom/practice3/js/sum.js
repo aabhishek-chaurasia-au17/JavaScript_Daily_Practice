@@ -11,4 +11,3 @@ submit.addEventListener('click',function() {
     console.log(sum);
     
 })
-
