@@ -1,12 +1,13 @@
 
-const btn = document.getElementsByClassName('btn');
-const body = document.getElementsByTagName('body');
-const color = ['red', 'green', 'blue', 'yellow', 'pink', 'purple'];
 
-body.style.backgroundColor = 'violet';
+const button = document.getElementById('btn')
+const body = document.querySelector('body')
+const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple'];
 
-btn.addEventListener('click', function(){
-    const colorIndex = parseInt(Math.random()*color.length)
-    body.style.backgroundColor = color[Index]
-})
+body.style.backgroundColor = 'violet'
+button.addEventListener('click', changeBackground)
 
+function changeBackground(){
+const colorIndex= parseInt(Math.random()*colors.length+1)
+body.style.backgroundColor = colors[colorIndex]
+}
