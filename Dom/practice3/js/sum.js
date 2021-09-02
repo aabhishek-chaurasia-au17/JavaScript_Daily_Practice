@@ -1,16 +1,14 @@
-
-const firstnum = document.getElementById('num1').value;
-const twonum = document.getElementById('num2').value;
 const submit = document.getElementById('submit');
-const shownum = document.getElementById('show');
 
-// submit.addEventListener('click',function() {
-//     let showsum = Number(firstnum) + Number(twonum)
-//     shownum.innerText = showsum
+
+submit.addEventListener('click',function() {
+    let firstnum = document.getElementById('num1').value;
+    let twonum = document.getElementById('num2').value;
+    const shownum = document.getElementById('show');
+    const sum = Number(firstnum) + Number(twonum);
     
-// })
-
-submit.addEventListener('click',function(firstnum,twonum) {
-    return firstnum + twonum
-   
+    shownum.innerText = sum;
+    console.log(sum);
+    
 })
+
