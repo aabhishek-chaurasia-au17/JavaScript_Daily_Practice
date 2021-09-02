@@ -10,6 +10,8 @@ push.addEventListener('click', function () {
     arr.push(input)
     res.innerText = arr
     console.log(arr);
+    res.style.color = 'white'
+    
 })
 
 pop.addEventListener("click", function(){
