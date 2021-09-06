@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+</head>
+
+<body>
+    <h1 id="heading">Abhishek chaurasia</h1>
+    <button onclick="changeHead()">Click Me</button>
+
+    <h2 onclick="arrow()" id="way1">1nd Way of Calling function</h2>
+    <h2 id="way2">2nd Way of Calling function</h2>
+    <h2 id="way3">3nd Way of Calling function</h2>
+
+    <script>
+        function changeHead() {
+            document.querySelector('#heading').innerHTML = 'Hare Krishna';
+        }
+
+
+        const arrow = () => {
+            // way1.innerHTML = 'Arrow Functions';
+            alert('Most Common way write a function')
+        }
+
+        const way2 = document.querySelector('#way2')
+
+        way2.onclick = function () {
+            alert('Most Common way write a function')
+        }
+
+        const way3 = document.querySelector('#way3')
+
+        way3.addEventListener('click', () => {
+            alert('I love this way of writing')
+        })
+    </script>
+</body>
+
+</html>

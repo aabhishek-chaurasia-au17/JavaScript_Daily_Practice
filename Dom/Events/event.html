@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="name">Hello My Name Is Abhishek Chaurasia. Jai Shri Raam</h1>
+
+    <p id="pra" onmousedown="mouseDown()" onmouseup="mouseUp()">Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit.
+        Incidunt, laboriosam
+        exercitationem odit
+        porro
+        non
+        alias vel quam pariatur sequi, laborum soluta mollitia nam fugiat commodi. Similique earum magni id doloremque!
+    </p>
+    <script>
+        const name = document.querySelector('#name');
+
+        const newfun = () => {
+            alert('naam change ho gya hai')
+            name.innerHTML = 'Hare Krishan'
+            nam.style.color = 'red'
+
+        }
+
+        name.addEventListener('click', newfun)
+
+        const pra = document.querySelector('#pra')
+
+        function mouseDown() {
+            pra.style.color = 'red'
+        }
+
+
+        function mouseUp() {
+            pra.style.color = 'yellow'
+        }
+
+    </script>
+</body>
+
+</html>

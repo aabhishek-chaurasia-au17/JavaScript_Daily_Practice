@@ -8,4 +8,15 @@
 //    arr[] = [3, 4, 5, 6, 7, 1, 2]
 
 
-const arr = [3, 4, 5, 6, 7, 6, 7];
+
+const getRotation = (arr, n) =>{
+    for(let i = 0; i < n; i++){
+       arr.unshift(arr.pop())
+    }
+    return arr
+}
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+let n = 5;
+
+console.log(getRotation(arr, n));
