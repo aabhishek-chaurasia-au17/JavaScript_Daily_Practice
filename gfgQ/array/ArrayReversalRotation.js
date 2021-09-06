@@ -10,9 +10,9 @@ let arr = [1, 2, 3, 4, 5, 6, 7];
 
 const getreversalarray = (arr,d) =>{
     for(let i = 0; i < d; i++){
-        arr.shift(arr.unshift())
+        arr.pop(arr.unshift())
     }
-    
+    return arr
 }
 
 let d = 2;
